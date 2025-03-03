@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flo</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="static/style.css"> <!-- Path relatif -->
 </head>
 <body>
     <div class="container">
         <h1>Selamat pagi! Selamat menjalani aktivitas hari ini yaa~</h1>
         <div class="flower">
-            <img src="{{ url_for('static', filename='flowers/flower_stage_1.png') }}" alt="Bunga" id="flowerImage">
+            <img src="static/flowers/flower_stage_1.png" alt="Bunga" id="flowerImage">
         </div>
         <button onclick="nextFlower()">Nih, buat kamu hehe</button>
     </div>
