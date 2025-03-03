@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff; /* Warna teks putih */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Background semi-transparan */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Bayangan */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.flower img {
+    width: 300px; /* Sesuaikan ukuran gambar */
+    border-radius: 10px; /* Sudut melengkung */
+    transition: transform 0.3s; /* Efek transisi */
+}
+
+.flower img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6f61; /* Warna tombol */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+button:hover {
+    background-color: #ff4c3b; /* Warna tombol saat hover */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat pagi! Selamat menjalani aktivitas hari ini yaa~</h1>
+        <div class="flower">
+            <img src="{{ url_for('static', filename='flowers/flower_stage_1.png') }}" alt="Bunga" id="flowerImage">
+        </div>
+        <button onclick="nextFlower()">Nih, buat kamu hehe</button>
+    </div>
+
+    <script>
+        let currentStage = 1;
+        const totalStages = 10; // Jumlah tahap
+
+        function nextFlower() {
+            currentStage++;
+            if (currentStage > totalStages) {
+                currentStage = 1; // Kembali ke tahap pertama
+                showMessage(); // Tampilkan pesan semangat
+            }
+            document.getElementById('flowerImage').src = `static/flowers/flower_stage_${currentStage}.png`;
+        }
+
+        function showMessage() {
+            alert("Semangat! Setiap bunga yang mekar adalah simbol dari harapan dan keindahan. Teruslah berjuang!");
+        }
+    </script>
+</body>
+</html>

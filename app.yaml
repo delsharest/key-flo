@@ -1,0 +1,6 @@
+runtime: python310  # Ganti dengan versi Python yang Anda gunakan
+entrypoint: gunicorn -b :$PORT app:app  # Ganti 'app' dengan nama file aplikasi Anda jika berbeda
+
+handlers:
+- url: /.*
+  script: auto
